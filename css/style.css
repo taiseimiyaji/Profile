@@ -30,14 +30,15 @@ img{
     list-style: none;
 }
 .main-nav li{
-    margin-left: 20px;
-    margin-right: 0px;
+    padding-left:30px;
+    margin:5px;
 }
 .main-nav a{
     color: 444;
 }
 .main-nav a:hover{
     color: #000;
+    
 }
 
 .page-header {
@@ -45,7 +46,7 @@ img{
     justify-content: space-between;
 }
 .wrapper{
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -56,6 +57,7 @@ img{
     background-position: center top;
     background-repeat: no-repeat;
     opacity: 1;
+    margin-bottom: 10px;
 }
 #home {
     background-image: url(../images/top_bg.png);
@@ -65,23 +67,45 @@ img{
     text-transform: none;
     
 }
+.profile{
+    margin-left: 100px;
+}
 .profile-title {
     font-family: "Yu Mincho", "YuMincho", serif;
     font-size: 2rem;
     font-weight: normal;
-    margin-left: 100px;
 }
 .profile-body{
-    margin-left: 100px;
+    
 }
 
 /* CONTACT */
 .contact{
-    margin:100px;
+    margin-top: 100px;
+    padding:100px;
+    width: 80%;
+    margin:auto;
 }
 input[type="text"],
 input[type="email"],
 textarea{
+    display: flex;
+    flex-wrap: wrap;
     background: rgba(200, 200, 200, 0.5);
+    border:1px #000 solid;
+    width:100%;
+}
+.your-profile{
+    display:flex;
+}
+.your-profile>div{
+    width:50%;
+}
+.contact,.contact>div{
+    /* border:1px #000 solid; */
+}
+input[type="submit"]{
+    margin-top: 10px;
+    padding:5px;
     border:1px #000 solid;
 }
