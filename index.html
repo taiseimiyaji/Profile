@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://taiseimiyaji.github.io/Prolile/css/style.css"> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/contact.js"></script>
     </head>
 
     <body>
@@ -50,30 +52,38 @@
                 </div><!-- contents1-->
             </main>
             <div class ="contact">
-                    <h2 class="page-title">CONTACT(github pagesでは動作しません。)</h2>
+                    <h2 class="page-title">CONTACT</h2>
                     <form action="#">
                         <div class="your-profile">
                             <div>
                                 <label for="name">NAME</label>
-                                <input type="text" id="name" name="your-name">
+                                <!-- <input type="text" id="name" name="your-name"> -->
+                                <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()' placeholder="name" >
                             </div>
                             <div>
                                 <label for="email">EMAIL ADDRESS</label>
-                                <input type="email" id="email" name="your-email">
+                                <!-- <input type="email" id="email" name="your-email"> -->
+                                <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()' placeholder="e-mail" >
                             </div>
                         </div>
                     <div>
                         <label for="message">MESSAGE</label>
-                        <textarea id="message" name="your-message"></textarea>
+                        <!-- <textarea id="message" name="your-message"></textarea> -->
+                        <textarea name="message" id="message"  onkeyup='window.contact.checkValidation()' placeholder="message"></textarea>
                     </div>
-                    <input type="submit" class="button" value="SUBMIT">
+                    <!-- <input type="submit" class="button" value="SUBMIT"> -->
+                    <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
                     </div>
                 </form>
             </div>
         
 
     </body>
-
+    <script>
+        $(function(){
+            window.contact.checkValidation()
+        });
+    </script>
     <footer>
         <div class="wrapper">
             <p><small>&copy; 2022 taisei miyaji</small></p>
