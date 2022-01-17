@@ -30,8 +30,8 @@ img{
     list-style: none;
 }
 .main-nav li{
-    margin-left: 10px;
-    margin-right: 16px;
+    margin-left: 20px;
+    margin-right: 0px;
 }
 .main-nav a{
     color: 444;
@@ -45,7 +45,7 @@ img{
     justify-content: space-between;
 }
 .wrapper{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -73,4 +73,15 @@ img{
 }
 .profile-body{
     margin-left: 100px;
+}
+
+/* CONTACT */
+.contact{
+    margin:100px;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(200, 200, 200, 0.5);
+    border:1px #000 solid;
 }
