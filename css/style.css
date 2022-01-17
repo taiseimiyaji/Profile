@@ -11,6 +11,7 @@ body{
 
 a{
     text-decoration: none;
+    color: black;
 }
 img{
     max-width: 100%;
@@ -29,7 +30,8 @@ img{
     list-style: none;
 }
 .main-nav li{
-    margin-left: 36px;
+    margin-left: 10px;
+    margin-right: 16px;
 }
 .main-nav a{
     color: 444;
@@ -43,16 +45,17 @@ img{
     justify-content: space-between;
 }
 .wrapper{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 4%;
 }
 
 /* 大きな背景画像 */
 .big-back {
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;
+    opacity: 1;
 }
 #home {
     background-image: url(../images/top_bg.png);
@@ -60,9 +63,14 @@ img{
 }
 #home .page-title{
     text-transform: none;
+    
 }
 .profile-title {
     font-family: "Yu Mincho", "YuMincho", serif;
     font-size: 2rem;
     font-weight: normal;
+    margin-left: 100px;
+}
+.profile-body{
+    margin-left: 100px;
 }
