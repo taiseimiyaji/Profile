@@ -2,8 +2,8 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>taisei miyaji's portfolio</title>
-        <meta name="description" content="宮地大成のポートフォリオサイトです。">
+        <title>taisei miyaji</title>
+        <meta name="description" content="taisei miyaji profile">
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -15,69 +15,64 @@
     </head>
 
     <body>
-        <div id="home" class="big-back">
-            <header class="page-header wrapper">
-            <h1><a href="index.html">taisei miyaji's portfolio</h1>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="">TOP</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
-            </header>
-            <div class="profile profile-title">
-                <article>
-                    Profile
-                </article>
-            </div>
-            <div class="profile profile-body">
-                <article>
-                    <p>大阪在住のエンジニアです<br>
-                    ~経験~<br>
-                    VBA,C/C++,Python,Java<br><br>
-                    ~趣味~<br>
-                    バイク、ゲーム、バスケットボール、競技プログラミング(Atcoder)<br><br>
-                    ~学生時代~<br>
-                    中学校で棒高跳びをしていました。<br>
-                    高校は軽音部でした。<br>
-
+        <header class="page-header wrapper">
+            <h1 class="page-title">
+                <a href="index.html">Taisei Miyaji</a>
+            </h1>
+        </header>
+        <div class="profile profile-title">
+            <article>
+                Profile
+            </article>
+        </div>
+        <div class="profile profile-body">
+            <article>
+                <div class="mb-30">
+                    <h2>About</h2>
+                    <p>
+                        Web Application Developer.
                     </p>
-                </article>
+                    <a href="https://smaregi.jp/">smaregi, Inc.</a>
+                </div>
+                <div class="mb-30">
+                    <h2>Skills</h2>
+                    <div class="graph">
+                        <div class="graph-content content-1">
+                            PHP
+                        </div>
+                        <div class="graph-content content-2">
+                            Laravel
+                        </div>
+                        <div class="graph-content content-3">
+                            Vue.js
+                        </div>
+                        <div class="graph-content content-4">
+                            Nuxt.js
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-30">
+                    <h2>GitHub and SNS</h2>
+                    <div>
+                        <a href="https://github.com/taiseimiyaji">GitHub</a>
+                    </div>
+                    <div>
+                        <a href="https://taisei-miyaji.hatenadiary.com/">My Blogs</a>
+                    </div>
+                </div>
+            </article>
+        </div>
 
-            </div>
-        </div><!-- /#home-->
             <main>
                 <div class="contents">
 
                 </div><!-- contents1-->
             </main>
-            <div class ="contact">
-                    <h2 class="page-title">CONTACT</h2>
-                    <form action="#">
-                        <div class="your-profile">
-                            <div>
-                                <label for="name">NAME</label>
-                                <!-- <input type="text" id="name" name="your-name"> -->
-                                <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()' placeholder="name" >
-                            </div>
-                            <div>
-                                <label for="email">EMAIL ADDRESS</label>
-                                <!-- <input type="email" id="email" name="your-email"> -->
-                                <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()' placeholder="e-mail" >
-                            </div>
-                        </div>
-                    <div>
-                        <label for="message">MESSAGE</label>
-                        <!-- <textarea id="message" name="your-message"></textarea> -->
-                        <textarea name="message" id="message"  onkeyup='window.contact.checkValidation()' placeholder="message"></textarea>
-                    </div>
-                    <!-- <input type="submit" class="button" value="SUBMIT"> -->
-                    <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
-                    </div>
-                </form>
-            </div>
-        
 
+            <div class ="contact mb-30">
+                <h2 class="page-navigation">CONTACT</h2>
+                taisei.miyaji4602@gmail.com
+            </div>
     </body>
     <script>
         $(function(){

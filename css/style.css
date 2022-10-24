@@ -33,9 +33,6 @@ img{
     padding-left:30px;
     margin:5px;
 }
-.main-nav a{
-    color: 444;
-}
 .main-nav a:hover{
     color: #000;
     
@@ -43,12 +40,10 @@ img{
 
 .page-header {
     display: flex;
-    justify-content: space-between;
+    margin-left: 100px;
 }
 .wrapper{
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 4%;
 }
 
 /* 大きな背景画像 */
@@ -56,19 +51,23 @@ img{
     background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;
-    opacity: 1;
     margin-bottom: 10px;
+    /*background-image: url(../images/top_bg.png);*/
+    opacity: 0.5;
 }
 #home {
-    background-image: url(../images/top_bg.png);
     min-height: 100vh;
 }
-#home .page-title{
+.page-title{
     text-transform: none;
-    
+    font-family: "Yu Mincho", "YuMincho", serif;
+}
+title{
+    font-family: "Yu Mincho", "YuMincho", serif;
 }
 .profile{
     margin-left: 100px;
+    opacity: 1;
 }
 .profile-title {
     font-family: "Yu Mincho", "YuMincho", serif;
@@ -78,13 +77,54 @@ img{
 .profile-body{
     
 }
-
+.mb-30{
+    margin-bottom: 30px;
+}
+.graph{
+    position: relative;
+    height: 350px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    width: 80%;
+    overflow: hidden;
+}
+.graph .graph-content {
+    height: 45px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: #646464;
+    color: white;
+    width: 60%;
+    border-radius: 0 4px 4px 0;
+    animation: graphAnimation 2s forwards;
+}
+@keyframes graphAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.graph .graph-content.content-1{
+    bottom: 275px;
+}
+.graph .graph-content.content-2 {
+    bottom: 200px;
+}
+.graph .graph-content.content-3 {
+    bottom: 125px;
+    width: 40%;
+}
+.graph .graph-content.content-4 {
+    bottom: 50px;
+    width: 40%
+}
 /* CONTACT */
 .contact{
-    margin-top: 100px;
-    padding:100px;
     width: 80%;
-    margin:auto;
+    margin-left: 100px;
 }
 input[type="text"],
 input[type="email"],
